@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Card</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Icons CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.6.95/css/materialdesignicons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f9f9fa;
+        }
+
+        .padding {
+            padding: 3rem !important;
+        }
+
+        .user-card-full {
+            overflow: hidden;
+        }
+
+        .card {
+            border-radius: 5px;
+            box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+            border: none;
+            margin-bottom: 30px;
+        }
+
+        .user-profile {
+            border-radius: 5px 0 0 5px;
+        }
+
+        .bg-c-lite-green {
+            background: linear-gradient(to right, #ee5a6f, #f29263);
+        }
+
+        .card-block {
+            padding: 1.25rem;
+        }
+
+        .img-radius {
+            border-radius: 5px;
+        }
+
+        h6 {
+            font-size: 14px;
+        }
+
+        .card .card-block p {
+            line-height: 25px;
+        }
+
+        .text-muted {
+            color: #919aa3 !important;
+        }
+
+        .social-link li {
+            display: inline-block;
+        }
+
+        .social-link li a {
+            font-size: 20px;
+            margin: 0 10px 0 0;
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="padding">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 col-sm-10">
+                    <div class="card user-card-full">
+                        <div class="row no-gutters">
+                            <div class="col-sm-4 bg-c-lite-green user-profile">
+                                <div class="card-block text-center text-white">
+                                    <div class="m-3">
+                                        <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image">
+                                    </div>
+                                    <h6 class="font-weight-bold">Hembo Tingor</h6>
+                                    <p>Web Designer</p>
+                                    <i class="mdi mdi-square-edit-outline feather icon-edit m-2"></i>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card-block">
+                                    <h6 class="font-weight-bold mb-3 pb-2 border-bottom">Information</h6>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p class="mb-1 font-weight-bold">Email</p>
+                                            <p class="text-muted">rntng@gmail.com</p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p class="mb-1 font-weight-bold">Phone</p>
+                                            <p class="text-muted">98979989898</p>
+                                        </div>
+                                    </div>
+                                    <h6 class="font-weight-bold mt-4 mb-3 pb-2 border-bottom">Projects</h6>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p class="mb-1 font-weight-bold">Recent</p>
+                                            <p class="text-muted">Sam Disuja</p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p class="mb-1 font-weight-bold">Most Viewed</p>
+                                            <p class="text-muted">Dinoter husainm</p>
+                                        </div>
+                                    </div>
+                                    <ul class="social-link list-unstyled mt-4">
+                                        <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="mdi mdi-facebook feather icon-facebook"></i></a></li>
+                                        <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="mdi mdi-twitter feather icon-twitter"></i></a></li>
+                                        <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="mdi mdi-instagram feather icon-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Tooltips -->
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+</html>
